@@ -1,12 +1,11 @@
 'use strict'
 
-/* 2-11 */
 var name = prompt("What is your name?", '');
 
 alert ( 'Hello, ' + name + '!' );
 
 /* 2-12 #1 */
-var standart = prompt('What is official name of JavaScript?'. '');
+var standart = prompt('What is official name of JavaScript?', '');
 
 if (standart === "ECMAScript"){
 	alert('You are right!!!');
@@ -28,7 +27,7 @@ if (enterNum > 0){
 /* 2-12 #3 */
 var login = prompt('Who are you?', 'for admin enter - admin');
 
-if (login == admin){
+if (login == 'admin'){
 	var adminPassword = prompt('Enter an admin password', '');
 	if (adminPassword == 'king'){
 		alert('Hello, Admin!');
@@ -42,3 +41,19 @@ if (login == admin){
 } else {
 	alert('I do not know you');
 }
+
+/* 2-12 #4 */
+var a = prompt('Enter first num', ''), 
+	b = prompt('Enter second num', '');
+var summ = (+a + +b < 4) ? 'Not a much!' :
+	'Too much!';
+alert (summ);
+
+/* 2-12 #5 */
+var login = prompt('Enter your login', 'john, boss ...');
+var message = (login == 'john') ? 'Hi!' :
+	message = (login == 'boss') ? 'Hello!' :
+	message = (login == '') ? 'No login' :
+	'error';
+
+alert(message);
