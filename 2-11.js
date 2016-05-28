@@ -69,3 +69,4 @@ if (age >= 14 && age <= 90){
 } else {
 	alert('It is not a num!');
 }
+
