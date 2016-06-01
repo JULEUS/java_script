@@ -3,7 +3,7 @@ function checkAge(age) {
   if (age > 18) {
     return true;
   } else {
-    return confirm('Родители разрешили?');
+    return confirm('Parents say YES?');
   }
 }
 
@@ -22,7 +22,7 @@ function min(a, b) {
 
 /* 2-17 #3 */
 var x = prompt('Enter x:', '');
-var n = prompt('Enter n:', '');
+var n = parseInt(prompt('Enter n:', ''));
 
 function pow(x, n) {
 	var result = x	
@@ -35,4 +35,3 @@ function pow(x, n) {
 }
 
 n <= 1 ? alert (n + 'Enter num bigger than 1') : alert(pow(x, n));
-
